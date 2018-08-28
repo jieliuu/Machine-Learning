@@ -1,6 +1,6 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 # Bagging and Random Forest
+
 ## Bagging
 &emsp; Bagging 属于并行式集成学习的方法。Bagginng 是基于自助采样法。给定每个包含m个样本的数据集，随机选取一个样本放入采样集，
 在把该样本放回到原始的数据集中，经过m次这样的操作后,得到含m个样本的采样集。初始数据集中的样本可能多次出现在采样集中，
@@ -24,4 +24,4 @@
 2. （rflmpute）这个方法计算量大，与第一种方法比不好判断孰优孰劣。先用第一种方法补上缺失值，然后构建森林并计算proximity matrix。proximity matrix是随机森林的一个特点。样本之间的相似度通过一个N* N的相似矩阵刻画， 矩阵元素p(i, j)代表样本i和j之间的相似度， 具体数值为样本i和j在随机森林生成的所有树中，出现同一叶节点的个数，最后归一化（除以总共生成树的数目）。如果是分类变量， 则用没有缺失的观测实例的proximity中的权重进行投票。如果是连续型变量，则用proximity矩阵进行加权平均的方法补缺失值。
 
 ### 随机森林评估特征重要性
-GI_m=\sum_{k=1}^{|K|}\sum_{k' \neq k } p_{mk} p_{mk'}=1-\sum_{k=1}^{|K|}p_{mk}^2
+$$a + b$$
